@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<style type="text/css">
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-size: 120%;
+  background: #F8F8FF;
+}
+
+.header {
+  width: 30%;
+  margin: 50px auto 0px;
+  color: white;
+  background: #5F9EA0;
+  text-align: center;
+  border: 1px solid #B0C4DE;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+}
+form, .content {
+  width: 30%;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid #B0C4DE;
+  background: white;
+  border-radius: 0px 0px 10px 10px;
+}
+.input-group {
+  margin: 10px 0px 10px 0px;
+}
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 15px;
+}
+.input-group input {
+  height: 30px;
+  width: 90%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+
+
+.close {
+  position: header;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.btn {
+  padding: 13px;
+  font-size: 20px;
+  color: white;
+  background: #5F9EA0;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+.error {
+  width: 92%;
+  margin: 0px auto;
+  padding: 10px;
+  border: 1px solid #a94442;
+  color: #a94442;
+  background: #f2dede;
+  border-radius: 5px;
+  text-align: left;
+}
+.success {
+  color: #3c763d;
+  background: #dff0d8;
+  border: 1px solid #3c763d;
+  margin-bottom: 20px;
+}
+</style>
+<title>Login</title>
+</head>
+
+<body>
+  <div class = "header">
+  <table width="450" border="0">
+  <tr>
+    <td><h1>&emsp; &emsp;Sign In</h1></td>
+    <td><!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<button class="btn"><i class="fa fa-close"></i></button></td>
+  </tr>
+</table>
+
+  </div>
+
+  <form method="post" action="login.php">
+ <div class="input-group">
+   
+<i class="fa fa-envelope-open" ></i>
+    <input class="text" type="text" placeholder="mail@example.com" name="usrnm">
+  </div>
+
+
+  <div class="input-group">
+  <i class="fa fa-unlock-alt" ></i>
+<input type="password" placeholder="password" name="password" required>
+  </div>
+  <div class="input-group">
+  <center><button type="submit" class="btn" name="login_user">Login</button></center>
+  </div>
+<br>
+  <p>
+  Forget your password? &emsp;  &emsp;  &emsp;  &emsp;  &emsp;  &emsp; &nbsp; Register!
+  </p>
+<h4>------------------------------OR-----------------------------</h4>
+<div>
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Add font awesome icons --><center>
+<br><a href="#" class="fa fa-facebook"></a><br><br>
+<a href="#" class="fa fa-twitter"></a></center>
+
+ </div>
+  <div class="input-group">
+  <center><button type="submit" class="btn" name="login_user">Epam Login</button></center>
+  </div>
+
+</div>
+  </form>
+</body>
+</html>
+
+
